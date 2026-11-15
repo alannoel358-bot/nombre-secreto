@@ -20,10 +20,30 @@
         function adivinar() {
             let nombre = document.getElementById("nombre").value;
 
-            document.getElementById("resultado").innerText =
-                "🔎 Analizando " + nombre + "...";
-        }
-    </script>
+           document.getElementById("resultado").innerText =
+    "🔎 Viendo información en la web...";
 
-</body>
-</html>
+setTimeout(function() {
+    document.getElementById("resultado").innerText =
+        "🧠 Analizando información...";
+}, 1000);
+
+setTimeout(function() {
+    document.getElementById("resultado").innerText =
+        "📡 Recalculando...";
+}, 2000);
+
+setTimeout(function() {
+    document.getElementById("resultado").innerText =
+        "💾 Consultando archivos secretos...";
+}, 3000);
+
+setTimeout(function() {
+    document.getElementById("resultado").innerText =
+        "✨ ¡YA LO TENGO!";
+}, 4000);
+
+setTimeout(function() {
+    document.getElementById("resultado").innerText =
+        "💥 Y tu nombre es... " + nombre;
+}, 5500);
