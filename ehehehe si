@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🔮 Nombre Secreto</title>
+</head>
+
+<body>
+
+    <h1>🔮 PUEDO ADIVINAR TU NOMBRE</h1>
+
+    <p>Solo necesito hacerte una pregunta...</p>
+
+    <input id="nombre" placeholder="Escribe tu nombre">
+
+    <button onclick="adivinar()">Adivinar</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function adivinar() {
+            let nombre = document.getElementById("nombre").value;
+
+            document.getElementById("resultado").innerText =
+                "🔎 Analizando " + nombre + "...";
+        }
+    </script>
+
+</body>
+</html>
